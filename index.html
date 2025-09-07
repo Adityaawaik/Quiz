@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="whole-quiz-content">
+      <div class="first-page-content">
+        <div class="starting-quiz">
+          <div class="starting-quiz-img">
+            <img src="images/Group 4.svg" alt="" />
+          </div>
+          <div class="start-btn">
+            <button class="start-quiz">Play</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-page-content second-page-content-removal">
+        <div class="second-page-question-content">
+          <div class="second-page-header">
+            <div class="quiz-logo">
+              <img class="quiz-logo-img" src="images/Group 4.svg" alt="" />
+            </div>
+
+            <div class="quiz-sound">
+              <button class="volume-btn">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+
+              <audio src="se_orita_instrumental.mp3" loop class="sound"></audio>
+            </div>
+          </div>
+
+          <div class="second-page-question-answer-layout">
+            <div class="number-of-question">
+              <span class="starting-question"></span>
+              <span class="hash">/</span>
+              <span class="total-question">25</span>
+            </div>
+
+            <p class="warning-note">
+              <b
+                >NOTE : Think twice before tick, Once ticked cannot be
+                changed</b
+              >
+            </p>
+            <div class="question-sets">
+              <div class="all-question">
+                <div class="question-number-1">
+                  <div class="question"></div>
+                  <div class="timer"></div>
+                  <div class="answer-options">
+                    <div class="options"></div>
+                    <div class="options"></div>
+                    <div class="options"></div>
+                    <div class="options"></div>
+                  </div>
+                  <div class="nextBtn">
+                    <button class="next-question">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="show-result"></div>
+    </div>
+    <div class="remarks">
+      <div class="show-remarks"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
